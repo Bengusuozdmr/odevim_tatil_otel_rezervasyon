@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="arka_plan">#F8F9FA</color>
+    <color name="kutu_arkaplan">#FFFFFF</color>
+    <color name= "kayit_buton">#00796B</color>
+    <color name= "giris_buton">#1976D2</color>
+    <color name="sifremi_unuttum">#F44336</color>
+    <color name="yazi_rengi_silik">#757575</color>
+</resources>

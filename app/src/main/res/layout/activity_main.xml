@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arka_plan">
+
+
+    <LinearLayout
+        android:id="@+id/resimler_blogu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/kutu_arkaplan"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/kayit_blogu"
+        app:layout_constraintVertical_chainStyle="spread">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/otel_photo1"
+            android:scaleType="centerCrop"
+            android:layout_margin="4dp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/otel_photo3"
+            android:scaleType="centerCrop"
+            android:layout_margin="4dp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/otel_photo4"
+            android:scaleType="centerCrop"
+            android:layout_margin="4dp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/otel_rezervasyon"
+            android:scaleType="centerCrop"
+            android:layout_margin="4dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/kayit_blogu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/kutu_arkaplan"
+        android:layout_margin="16dp"
+        android:padding="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/resimler_blogu"
+        app:layout_constraintBottom_toTopOf="@+id/giris_blogu">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ad_soyad"
+            android:textColorHint="@color/yazi_rengi_silik"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/eposta"
+            android:textColorHint="@color/yazi_rengi_silik"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/yas"
+            android:textColorHint="@color/yazi_rengi_silik"
+            android:inputType="number"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kayit_ol"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@color/kayit_buton"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/giris_blogu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/kutu_arkaplan"
+        android:layout_margin="16dp"
+        android:padding="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/kayit_blogu"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/kullanici_adi"
+            android:textColorHint="@color/yazi_rengi_silik"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/sifre"
+            android:textColorHint="@color/yazi_rengi_silik"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnGiris"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/giris_yap"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@color/giris_buton"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/sifremi_unuttum"
+            android:textAlignment="center"
+            android:textColor= "@color/sifremi_unuttum"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
